@@ -1,13 +1,19 @@
-import s from './page.module.css'
+import s from "./page.module.css";
 import Link from "next/link";
+import { Hero } from "@component/app/components/hero/hero";
 
 const Home = () => {
   return (
-    <main className={s.main}>
+    <>
+      <Hero />
+      <main className={s.main}>
         <h3 className={s.title}>this is nastja.crochets website!!!</h3>
-        <Link href="/test">go to the test page</Link>
-    </main>
-  )
-}
+        <Link href="/patterns">patterns</Link>
+        <Link href="/collabs">collabs</Link>
+        <Link href="/test-patterns">become a tester</Link>
+      </main>
+    </>
+  );
+};
 
 export default Home;
