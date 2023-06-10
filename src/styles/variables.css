@@ -1,0 +1,16 @@
+@import "fonts/fonts.css";
+
+:root {
+    --font-rubik: Rubik, sans-serif;
+
+    --color-blue: #6F8BD8;
+    --color-beige: #F8F6E8;
+    --color-orange: #E87C34;
+    --color-orange-active: #CF6924;
+    --color-green: #8FB659;
+    --color-black: #58453B;
+    --color-pink: #E6B7BA;
+    --color-red: #E04646;
+    --color-light-grey: #BFBAB4;
+    --color-dark-grey: #7C756E;
+}

@@ -1,0 +1,85 @@
+@import "../../../styles/media.css";
+
+.aboutMe {
+    padding: 20px 0;
+
+    @media (--tablet) {
+        padding: 20px 16px;
+    }
+}
+
+.content {
+    margin-top: 24px;
+
+    @media (--tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    @media (--desktop) {
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+.title {
+    padding: 0 16px;
+
+    @media (--tablet) {
+        padding: 0;
+    }
+
+    @media (--desktop) {
+        margin-bottom: 40px;
+    }
+}
+
+.button {
+    width: calc(100% - 32px);
+
+    @media (--tablet) {
+        width: max-content;
+    }
+}
+
+.text {
+    padding: 0 16px;
+    margin-bottom: 20px;
+
+    @media (--tablet) {
+        padding: 0;
+        margin-bottom: 32px;
+    }
+}
+
+.paragraph {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (--desktop) {
+        margin-bottom: 28px;
+    }
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+
+    @media (--tablet) {
+        max-width: 204px;
+        margin-left: 32px;
+        margin-bottom: 0;
+    }
+
+    @media (--desktop) {
+        max-width: 393px;
+        height: 600px;
+        margin-left: 80px;
+    }
+}

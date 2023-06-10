@@ -1,0 +1,19 @@
+@import "../../../styles/media.css";
+
+.container {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+
+    @media (--tablet) {
+        max-width: 528px;
+    }
+
+    @media (--desktop) {
+        max-width: 928px;
+    }
+}

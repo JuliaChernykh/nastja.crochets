@@ -1,19 +1,15 @@
-import s from "./page.module.css";
-import Link from "next/link";
-import { Hero } from "@component/app/components/hero/hero";
+import s from './page.module.css';
+import { AboutMe } from '@component/app/components/about-me/about-me';
+import dynamic from 'next/dynamic'
 
 const Home = () => {
   return (
-    <>
-      <Hero />
-      <main className={s.main}>
-        <h3 className={s.title}>this is nastja.crochets website!!!</h3>
-        <Link href="/patterns">patterns</Link>
-        <Link href="/collabs">collabs</Link>
-        <Link href="/test-patterns">become a tester</Link>
-      </main>
-    </>
+    <main className={s.main}>
+      <AboutMe />
+    </main>
   );
 };
 
-export default Home;
+export default dynamic(() => Promise.resolve(Home), {
+    ssr: false
+});
