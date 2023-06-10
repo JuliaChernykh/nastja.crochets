@@ -4,7 +4,7 @@ import {WithClassName} from '../../types/types';
 import cn from 'classnames';
 
 type Props = WithClassName & {
-
+    children: any;
 }
 
 export const Container: FC<Props> = ({children, className}) => {

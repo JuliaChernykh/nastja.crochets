@@ -5,6 +5,7 @@ import cn from 'classnames';
 
 type Props = WithClassName & {
     onClick: () => void;
+    children: any;
 }
 
 export const Button: React.FC<Props> = ({children, onClick, className}) => {
