@@ -1,0 +1,42 @@
+@import "../../../styles/media.css";
+
+.button {
+    color: var(--color-orange);
+    background: var(--color-beige);
+    border: 2px solid var(--color-orange);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 20px;
+    width: 100%;
+    cursor: pointer;
+
+    @media (--tablet) {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 15px 58px;
+        width: max-content;
+    }
+
+    @media (--desktop) {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 13px 30px;
+    }
+
+    &:hover {
+        color: var(--color-beige);
+        background: var(--color-orange);
+    }
+
+    &:active {
+        color: var(--color-beige);
+        background: var(--color-orange-active);
+    }
+
+    &:disabled {
+        color: var(--color-light-grey);
+        background: var(--color-light-grey);
+    }
+}
