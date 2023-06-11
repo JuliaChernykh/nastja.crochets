@@ -10,7 +10,7 @@
     line-height: 20px;
     padding: 14px 20px;
     width: 100%;
-    cursor: pointer;
+    user-select: none;
 
     @media (--tablet) {
         font-size: 14px;

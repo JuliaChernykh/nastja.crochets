@@ -3,5 +3,46 @@
     "title": "About me",
     "text": ["Hi! My name is Nastja (she/her). I am a 22-year-old queer person living in Lisbon, Portugal, and I am a full-time crocheter. This means I create crochet designs and write tutorials on how to make them. My goal is to make slow fashion more popular and teach others how to create their own clothes!", "I want to create patterns that are accessible to anyone, which is why all my patterns are made to measure. You can easily adjust the pattern to your own size, making it bigger or smaller. For this reason, I always test my tutorials before releasing them!"],
     "buttonText": "See patterns"
+  },
+  "FAQ": {
+    "title": "People always ask",
+    "items": [
+      {
+        "question": "How can I learn to crochet?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "How do I read a crochet pattern?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "How do I choose the right yarn and hook for my project?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "What does \"made to measure\" mean?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "Do you offer custom designs or commissions?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "Can I sell items made from your patterns?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "Can I use your patterns to teach others how to crochet?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "Can I get a refund for the pattern?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      },
+      {
+        "question": "How can I contact you if I have questions or need help?",
+        "answer": "Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis."
+      }
+    ]
   }
 }
