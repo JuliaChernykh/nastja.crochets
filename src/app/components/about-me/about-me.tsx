@@ -11,7 +11,7 @@ import s from './about-me.module.css'
 import resources from '../../../resources/resources.json';
 import {desktopMediaQuery} from '@component/styles/media';
 
-const {title, text, buttonText} = resources.AboutMe;
+const {title, imageSrc, text, buttonText} = resources.AboutMe;
 
 export const AboutMe: React.FC = () => {
   const router = useRouter();
@@ -23,7 +23,7 @@ export const AboutMe: React.FC = () => {
     <Container className={s.aboutMe}>
         {!isDesktop && renderTitle()}
         <div className={s.content}>
-            <img className={s.image} src="images/about-me.jpeg" alt="" />
+            <img className={s.image} src={imageSrc} alt="" />
             <div className={s.text}>
                 {isDesktop && renderTitle()}
                 {text.map((item, index) => (
