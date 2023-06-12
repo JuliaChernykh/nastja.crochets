@@ -1,10 +1,12 @@
 @import "../../../styles/media.css";
 
 .aboutMe {
-    padding: 20px 0;
+    padding-left: 0;
+    padding-right: 0;
 
     @media (--tablet) {
-        padding: 20px 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -38,9 +40,11 @@
 
 .button {
     width: calc(100% - 32px);
+    align-self: center;
 
     @media (--tablet) {
         width: max-content;
+        align-self: initial;
     }
 }
 
