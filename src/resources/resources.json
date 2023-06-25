@@ -109,5 +109,62 @@
         ]
       }
     ]
+  },
+  "CollabsPage": {
+    "collabsInfo": {
+      "title": "Collabs",
+      "imageSrc": "images/collabs-info.jpeg",
+      "text": ["If you're a yarn company, craft store, gallery, or crocheter looking to collaborate on a project, I would love to work with you! I'm excited to explore new collaborations and contribute my skills to create something pretty cool together.", "If you're interested in working with me or have any collaboration ideas, don’t hesitate to write me."],
+      "buttonText": "Contact me",
+      "contactData": {
+        "email": "nastjacrochets@gmail.com",
+        "subject": "Collabs",
+        "text": "Hi, Nastja!"
+      }
+    },
+    "collabsList": [
+      {
+        "title": "Stephen & Penelope",
+        "description": "A yarn store in the heart of Amsterdam, the Netherlands. Designer of the Month programme where they showcase the work of outstanding knit and crochet designers each month.",
+        "link": {
+          "text": "Learn more",
+          "href": ""
+        },
+        "imageSrc": "/images/stephen-and-penelope-collab.jpeg"
+      },
+      {
+        "title": "Stephen & Penelope",
+        "description": "A yarn store in the heart of Amsterdam, the Netherlands. Designer of the Month programme where they showcase the work of outstanding knit and crochet designers each month.",
+        "link": {
+          "text": "Learn more",
+          "href": ""
+        }
+      }
+    ]
+  },
+  "TestPatternsPage": {
+    "isTestingAvailable": true,
+    "title": "Become a tester",
+    "testingAvailableData": {
+      "title": "Help me test Lucy Sweater pattern",
+      "text": ["Would you like to receive this pattern for free before its official release? Apply now to become a tester!", "Your role will be to follow the pattern and provide feedback on the instructions, materials, and finished item. This feedback is essential to ensure that the pattern is clear, accurate, and easy to follow for other crocheters."],
+      "imagesSrc": ["/images/test-patterns/pattern-photo-1.jpeg", "/images/test-patterns/pattern-photo-2.jpeg", "/images/test-patterns/pattern-photo-3.jpeg", "/images/test-patterns/pattern-photo-4.jpg", "/images/test-patterns/pattern-photo-5.jpg"]
+    },
+    "testingUnavailableData": {
+      "text": ["Unfortunately, there are no patterns available for testing at the moment. You can fill out the form below to receive an email when I will be looking for testers."],
+      "subscriptionForm": {
+        "emailPlaceholderText": "E-mail",
+        "emailValidationErrorText": "Incorrect e-mail",
+        "policy": {
+          "text": "I have read and agree to the",
+          "link": {
+            "text": "Privacy Policy",
+            "href": ""
+          }
+        },
+        "buttonText": "Subscribe"
+      },
+      "imageSrc": "/images/test-patterns/testing-unavailable.jpeg"
+    }
   }
 }

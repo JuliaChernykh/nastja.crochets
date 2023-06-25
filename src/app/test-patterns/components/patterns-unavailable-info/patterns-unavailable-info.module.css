@@ -1,0 +1,42 @@
+@import "../../../../styles/media.css";
+
+.paragraph {
+    margin: 24px 0 20px;
+
+    @media (--tablet) {
+        margin: 24px 0 32px;
+    }
+
+    @media (--desktop) {
+        margin: 40px 0 28px;
+    }
+}
+
+.form {
+}
+
+.policyAgreement {
+    margin: 28px 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.text, .paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (--desktop) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.checkbox {
+    margin-right: 8px;
+}
+
+.link {
+    color: var(--color-orange);
+    margin-left: 6px;
+}

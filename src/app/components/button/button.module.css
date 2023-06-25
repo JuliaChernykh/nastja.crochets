@@ -5,15 +5,15 @@
     background: var(--color-beige);
     border: 2px solid var(--color-orange);
     border-radius: 8px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     padding: 14px 20px;
     width: 100%;
     user-select: none;
+    transition: background 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
 
     @media (--tablet) {
-        font-size: 14px;
         line-height: 18px;
         padding: 15px 58px;
         width: max-content;
@@ -37,6 +37,8 @@
 
     &:disabled {
         color: var(--color-light-grey);
-        background: var(--color-light-grey);
+        border: 2px solid var(--color-light-grey);
+        background: var(--color-beige);
+        cursor: unset;
     }
 }

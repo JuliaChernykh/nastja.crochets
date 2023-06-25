@@ -10,12 +10,10 @@
     @media (--tablet) {
         padding-top: 40px;
         padding-bottom: 72px;
-        max-width: 552px;
     }
 
     @media (--desktop) {
         padding-bottom: 52px;
-        max-width: 786px;
     }
 }
 
