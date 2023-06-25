@@ -1,8 +1,22 @@
+'use client';
+
 import React from 'react';
-import s from './page.module.css';
+import dynamic from 'next/dynamic';
+
+import {
+    PatternsUnavailableInfo
+} from '@component/app/test-patterns/components/patterns-unavailable-info/patterns-unavailable-info';
+import {Footer} from '@component/app/components/footer/footer';
 
 const TestPatternsPage: React.FC = () => {
-  return <div className={s.page}>test patterns page</div>;
+  return (
+      <main>
+          <PatternsUnavailableInfo/>
+          <Footer />
+      </main>
+  );
 };
 
-export default TestPatternsPage;
+export default dynamic(() => Promise.resolve(TestPatternsPage), {
+    ssr: false
+});

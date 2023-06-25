@@ -1,6 +1,6 @@
 @import "../../../styles/media.css";
 
-.aboutMe {
+.mainInfoBlock {
     padding-left: 0;
     padding-right: 0;
 
@@ -54,29 +54,19 @@
 
     @media (--tablet) {
         padding: 0;
-        margin-bottom: 32px;
-    }
-}
-
-.paragraph {
-    margin-bottom: 16px;
-
-    &:last-child {
         margin-bottom: 0;
-    }
-
-    @media (--desktop) {
-        margin-bottom: 28px;
     }
 }
 
 .image {
     width: 100%;
+    height: 125vw;
     margin-bottom: 20px;
     object-fit: cover;
 
     @media (--tablet) {
         max-width: 204px;
+        height: 328px;
         margin-left: 32px;
         margin-bottom: 0;
     }

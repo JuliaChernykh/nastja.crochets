@@ -5,11 +5,12 @@ import cn from 'classnames';
 
 type Props = WithClassName & {
     onClick: () => void;
+    disabled?: boolean;
     children: any;
 }
 
-export const Button: React.FC<Props> = ({children, onClick, className}) => {
+export const Button: React.FC<Props> = ({children, onClick, disabled = false, className}) => {
     return (
-        <button className={cn(s.button, className)} onClick={onClick}>{children}</button>
+        <button className={cn(s.button, className)} onClick={onClick} disabled={disabled}>{children}</button>
     );
 };

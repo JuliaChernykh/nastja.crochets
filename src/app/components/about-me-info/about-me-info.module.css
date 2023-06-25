@@ -1,0 +1,19 @@
+@import "../../../styles/media.css";
+
+.paragraph {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (--tablet) {
+        &:nth-last-child(2) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media (--desktop) {
+        margin-bottom: 28px;
+    }
+}

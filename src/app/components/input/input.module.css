@@ -1,0 +1,57 @@
+.inputField {
+    position: relative;
+}
+
+.input {
+    border: unset;
+    outline: none;
+    border-bottom: 1px solid var(--color-black);
+    color: var(--color-black);
+    background: unset;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    transition: border 0.3s ease-out;
+
+    &.withError {
+        border-bottom: 1px solid var(--color-red);
+    }
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    pointer-events: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    transition: all 0.3s;
+    transform-origin: 0;
+}
+
+.input:focus + .placeholder,
+.input.nonEmpty + .placeholder {
+    transform: translateY(-24px);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.errorHint {
+    color: var(--color-red);
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: -8px;
+    opacity: 0;
+    transition: margin-top 0.3s ease-out, opacity 0.3s ease-out;
+    will-change: opacity, margin-top;
+
+    &.visible {
+        margin-top: 8px;
+        opacity: 1;
+    }
+}

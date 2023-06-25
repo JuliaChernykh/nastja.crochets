@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
-import {AboutMe} from '@component/app/components/about-me/about-me';
+import {AboutMeInfo} from '@component/app/components/about-me-info/about-me-info';
 import {FAQ} from '@component/app/components/faq/faq';
 import {Footer} from '@component/app/components/footer/footer';
 
@@ -12,7 +12,7 @@ import s from './page.module.css';
 const Home = () => {
   return (
       <main className={s.main}>
-          <AboutMe />
+          <AboutMeInfo />
           <FAQ />
           <Footer />
       </main>
