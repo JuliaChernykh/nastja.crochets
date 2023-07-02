@@ -8,7 +8,7 @@ type Props = WithClassName & {
     disabled?: boolean;
     children: any;
     size?: 's' | 'm';
-    type: 'default' | 'filled';
+    type?: 'default' | 'filled';
 }
 
 export const Button: React.FC<Props> = ({

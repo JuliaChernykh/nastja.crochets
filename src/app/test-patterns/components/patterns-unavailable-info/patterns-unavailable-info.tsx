@@ -1,14 +1,14 @@
-import React, {FC, useState} from 'react';
+import React, {FC, FormEvent, useState} from 'react';
 import cn from 'classnames';
 
 import resources from '@component/resources/resources.json';
 import {InfoBlock} from '@component/app/components/info-block/info-block';
 import {Input} from '@component/app/components/input/input';
-
-import s from './patterns-unavailable-info.module.css';
 import {validateEmail} from '@component/app/helpers/validateEmail';
 import {Button} from '@component/app/components/button/button';
 import {Checkbox} from '@component/app/components/checkbox/checkbox';
+
+import s from './patterns-unavailable-info.module.css';
 
 const { title, testingUnavailableData } = resources.TestPatternsPage;
 const { imageSrc, text, subscriptionForm } = testingUnavailableData;
@@ -24,7 +24,6 @@ export const PatternsUnavailableInfo: FC = () => {
     );
 };
 
-
 const PatternsUnavailableMainContent = () => {
     const [inputValue, setInputValue] = useState('');
     const [isPolicyAccepted, setIsPolicyAccepted] = useState(false);
@@ -36,10 +35,9 @@ const PatternsUnavailableMainContent = () => {
         } else {
             setValidationError(true);
         }
-
     }
 
-    const onFormSubmit = (e) => {
+    const onFormSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     }
 
