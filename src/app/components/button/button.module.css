@@ -25,6 +25,32 @@
         padding: 13px 30px;
     }
 
+    &.s {
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 4px 12px;
+
+        @media (--desktop) {
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 19px;
+            padding: 8px 12px;
+        }
+    }
+
+    &.filled {
+        color: var(--color-beige);
+        background: var(--color-orange);
+
+        &:hover {
+            color: var(--color-beige);
+            background: var(--color-orange-active);
+            border: 2px solid var(--color-orange-active);
+        }
+    }
+
     &:hover {
         color: var(--color-beige);
         background: var(--color-orange);
@@ -33,9 +59,10 @@
     &:active {
         color: var(--color-beige);
         background: var(--color-orange-active);
+        border: 2px solid var(--color-orange-active);
     }
 
-    &:disabled {
+    &:disabled&:disabled {
         color: var(--color-light-grey);
         border: 2px solid var(--color-light-grey);
         background: var(--color-beige);

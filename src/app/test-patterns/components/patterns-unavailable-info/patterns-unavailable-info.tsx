@@ -18,7 +18,6 @@ export const PatternsUnavailableInfo: FC = () => {
     return (
       <InfoBlock
         title={title}
-        text={text}
         imageSrc={imageSrc}
         mainContentComponent={<PatternsUnavailableMainContent />}
       />
