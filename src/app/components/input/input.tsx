@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 type InputProps = {
     value: string;
-    onChange(string): void;
+    onChange(s: string): void;
     placeholderText: string;
     type: string;
     isValidationError?: boolean;

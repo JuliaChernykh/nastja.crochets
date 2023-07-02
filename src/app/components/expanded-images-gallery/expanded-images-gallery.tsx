@@ -13,21 +13,18 @@ type ExpandedImagesGalleryProps = {
 }
 
 export const ExpandedImagesGallery: FC<ExpandedImagesGalleryProps> = ({imagesSrc, visible, onClose, selectedImage}) => {
-    const ref = useRef(null);
+    const ref = useRef<null | HTMLImageElement>(null);
     useEffect(() => {
         if (visible) {
             document.body.style.overflow = 'hidden';
-            if (ref) {
-                ref.current.scrollIntoView({ behavior: 'smooth', block: 'center'});
-            }
-
+            ref?.current?.scrollIntoView({ behavior: 'smooth', block: 'center'});
         } else {
             document.body.style.overflow = 'auto';
         }
     }, [visible])
 
     useEffect(() => {
-        const closeOnEscapeKey = e => e.key === 'Escape' ? onClose() : null;
+        const closeOnEscapeKey = (e: KeyboardEvent) => e.key === 'Escape' ? onClose() : null;
         document.body.addEventListener('keydown', closeOnEscapeKey);
         return () => {
             document.body.removeEventListener('keydown', closeOnEscapeKey);
@@ -46,6 +43,6 @@ export const ExpandedImagesGallery: FC<ExpandedImagesGalleryProps> = ({imagesSrc
                 ))}
             </div>
         </div>,
-        document.getElementById('root')
+        document.getElementById('root') as Element
     )
 }

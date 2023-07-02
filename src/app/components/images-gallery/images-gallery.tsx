@@ -61,7 +61,7 @@ const CarouselGallery: FC<ImagesGalleryProps> = ({imagesSrc}) => {
 }
 
 type DefaultGalleryProps = ImagesGalleryProps & {
-    onImgClick(number): void;
+    onImgClick(idx: number): void;
 }
 
 const DefaultGallery: FC<DefaultGalleryProps> = ({imagesSrc, onImgClick, className}) => {
