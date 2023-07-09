@@ -23,6 +23,7 @@
         font-size: 16px;
         line-height: 22px;
         padding: 13px 30px;
+        min-width: 158px;
     }
 
     &.s {
@@ -37,6 +38,7 @@
             font-size: 14px;
             line-height: 19px;
             padding: 8px 12px;
+            min-width: 86px;
         }
     }
 

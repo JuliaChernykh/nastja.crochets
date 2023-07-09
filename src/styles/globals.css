@@ -15,6 +15,7 @@ button {
     background: var(--color-beige);
     color: var(--color-black);
     cursor: pointer;
+    border: none;
 }
 
 a {

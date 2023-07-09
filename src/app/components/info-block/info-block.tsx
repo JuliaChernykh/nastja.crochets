@@ -33,7 +33,7 @@ export const InfoBlock: FC<MainInfoBlockProps> = ({title, buttonText, onButtonCl
     };
 
     return (
-        <Container className={cn(s.mainInfoBlock, {[s.withGallery]: withGallery})} fullPage>
+        <Container className={cn(s.mainInfoBlock, {[s.withGallery]: withGallery})}>
             {(!isDesktop || withGallery) && renderTitle()}
             <div className={cn(s.content, {[s.withGallery]: withGallery})}>
                 {typeof imageSrc === 'string' ? (
