@@ -1,7 +1,7 @@
 import {FC, useEffect, useRef} from 'react';
 import {createPortal} from 'react-dom';
 
-import {CloseIcon} from '@component/app/components/expanded-images-gallery/closeIcon';
+import {CloseIcon} from '@component/app/components/icons/close-icon/close-icon';
 
 import s from './expanded-images-gallery.module.css';
 

@@ -1,4 +1,22 @@
 {
+  "Header": {
+    "logoText": "Nastja Crochets",
+    "logoIconSrc": "icons/logo.png",
+    "navigationLinks": [
+      {
+        "text": "Patterns",
+        "href": "/patterns"
+      },
+      {
+        "text": "Collabs",
+        "href": "/collabs"
+      },
+      {
+        "text": "Become a tester",
+        "href": "/test-patterns"
+      }
+    ]
+  },
   "AboutMe": {
     "title": "About me",
     "imageSrc": "images/about-me.jpeg",
@@ -147,7 +165,7 @@
     "title": "Become a tester",
     "testingAvailableData": {
       "title": "Help me test Lucy Sweater pattern",
-      "text": ["Would you like to receive this pattern for free before its official release? Apply now to become a tester!", "Your role will be to follow the pattern and provide feedback on the instructions, materials, and finished item. This feedback is essential to ensure that the pattern is clear, accurate, and easy to follow for other crocheters."],
+      "text": ["Would you like to receive this pattern for free before its official release? Apply now to become a tester!", "Your role will be to follow the pattern and provide feedback on the instructions, materials, and finished item. This feedback is essential to ensure that the pattern is clear, accurate, and easy to follow for other crocheters."],
       "imagesSrc": ["/images/test-patterns/pattern-photo-1.jpeg", "/images/test-patterns/pattern-photo-2.jpeg", "/images/test-patterns/pattern-photo-3.jpeg", "/images/test-patterns/pattern-photo-4.jpg", "/images/test-patterns/pattern-photo-5.jpg"],
       "buttonText": "Apply",
       "applicationFormHref": ""

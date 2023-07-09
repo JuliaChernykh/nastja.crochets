@@ -1,0 +1,77 @@
+.panel {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 108px 40px;
+    min-width: 232px;
+    min-height: 100vh;
+    background: var(--color-beige);
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+
+    &.visible {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.button {
+    width: 24px;
+    height: 24px;
+}
+
+.closeButton {
+    z-index: 11;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 32px;
+    position: relative;
+    width: fit-content;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
+
+    &:first-child:after {
+        width: 72px;
+        background-image: url("../../../../../../public/icons/link-hover-1.svg");
+    }
+
+    &:nth-child(2):after {
+        background-image: url("../../../../../../public/icons/link-hover-2.svg");
+    }
+
+    &:nth-child(3):after {
+        background-image: url("../../../../../../public/icons/link-hover-3.svg");
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+}
