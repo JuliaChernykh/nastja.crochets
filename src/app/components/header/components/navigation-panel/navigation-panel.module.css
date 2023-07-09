@@ -2,12 +2,12 @@
     z-index: 11;
     position: fixed;
     top: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 108px 40px;
     min-width: 232px;
-    min-height: 100vh;
     background: var(--color-beige);
     right: -100%;
     opacity: 0;
